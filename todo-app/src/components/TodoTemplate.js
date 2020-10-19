@@ -26,15 +26,11 @@ const Todo = styled.div`
 
 
 const TodoTemplate = ({ children }) => {
-
-
     return (
-        <div>
-            <Todo>
-                <div className="app-title">일정 관리</div>
-                <div className="content">{children}</div>
-            </Todo>
-        </div>
+        <Todo>
+            <div className="app-title">일정 관리</div>
+            <div className="content">{children}</div>
+        </Todo>
     );
 };
 

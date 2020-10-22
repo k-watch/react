@@ -1,11 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Counter from '../components/Counter';
-import { increase, decrease } from '../modules/counter'
+import { increaseAsync, decreaseAsync } from '../modules/counter'
 
-const CounterContainer = ({ number, increase, decrease }) => {
+const CounterContainer = ({ number, increaseAsync, decreaseAsync }) => {
     return (
-        <Counter number={number} increase={increase} decrease={decrease} />
+        <Counter number={number} increase={increaseAsync} decrease={decreaseAsync} />
     );
 };
 
@@ -14,7 +14,7 @@ export default connect(
         number: state.counter.number
     }),
     {
-        increase,
-        decrease,
+        increaseAsync,
+        decreaseAsync,
     }
 )(CounterContainer);

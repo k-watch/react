@@ -9,6 +9,18 @@ const DECREASE = 'counter/decrease'
 export const increase = createAction(INCREASE)
 export const decrease = createAction(DECREASE)
 
+export const increaseAsync = () => dispatch => {
+    setTimeout(() => {
+        dispatch(increase())
+    }, 1000)
+}
+
+export const decreaseAsync = () => dispatch => {
+    setTimeout(() => {
+        dispatch(decrease())
+    }, 1000)
+}
+
 const initState = {
     number: 0
 }

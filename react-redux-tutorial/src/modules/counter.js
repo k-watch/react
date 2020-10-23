@@ -21,9 +21,7 @@ export const decreaseAsync = () => dispatch => {
     }, 1000)
 }
 
-const initState = {
-    number: 0
-}
+const initState = 0
 
 // function counter(state = initState, action) {
 // switch (action.type) {
@@ -38,8 +36,8 @@ const initState = {
 
 const counter = handleActions(
     {
-        [INCREASE]: (state, action) => ({ number: state.number + 1 }),
-        [DECREASE]: (state, action) => ({ number: state.number - 1 })
+        [INCREASE]: (state, action) => state + 1,
+        [DECREASE]: (state, action) => state - 1
     },
     initState
 )

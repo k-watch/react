@@ -11,7 +11,7 @@ const CounterContainer = ({ number, increaseAsync, decreaseAsync }) => {
 
 export default connect(
     (state) => ({
-        number: state.counter.number
+        number: state.counter
     }),
     {
         increaseAsync,

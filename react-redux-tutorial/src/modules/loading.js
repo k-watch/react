@@ -5,7 +5,7 @@ const FINISH_LOADING = 'loading/FINISH_LOADING'
 
 export const startLoading = createAction(
     START_LOADING,
-    reqType => reqType
+    reqType => reqType,
 )
 
 export const finishLoading = createAction(

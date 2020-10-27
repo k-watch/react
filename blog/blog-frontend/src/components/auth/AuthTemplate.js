@@ -1,8 +1,11 @@
 import React from 'react';
-import styled from 'styled-components'
-import palette from '../../lib/styles/palette'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
+import palette from '../../lib/styles/palette';
 
+// 회원가입/로그인 페이지 레이아웃 담당 컴포넌트
+
+// 화면 전체
 const AuthTemplateBlock = styled.div`
     position: absolute;
     left: 0;
@@ -16,6 +19,7 @@ const AuthTemplateBlock = styled.div`
     align-items: center;
 `
 
+// 흰색 박스
 const WhiteBox = styled.div`
     .logo-area {
         display: block;
@@ -30,6 +34,7 @@ const WhiteBox = styled.div`
     background: white;
     border-radius: 2px;
 `
+
 
 const AuthTemplate = ({ children }) => {
     return (

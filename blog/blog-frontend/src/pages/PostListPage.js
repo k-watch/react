@@ -1,12 +1,14 @@
 import React from 'react';
-import Button from '../components/common/Button';
 import HeaderContainer from '../containers/common/HeaderContainer';
+import PostListContainer from '../containers/post/PostListContainer';
+import PaginationContainer from '../containers/posts/PaginationContainer';
 
 const PostListPage = () => {
   return (
     <>
       <HeaderContainer />
-      <Button>버튼</Button>
+      <PostListContainer />
+      <PaginationContainer />
     </>
   );
 };

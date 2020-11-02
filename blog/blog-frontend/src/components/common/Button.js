@@ -36,6 +36,16 @@ const buttonStyle = css`
       }
     `}
 
+    ${(props) =>
+    props.blue &&
+    css`
+      background: #bae4e9;
+      &:hover {
+        background: #76cad3;
+      }
+    `}
+     
+
     &:disabled {
     background: ${palette.gray[3]};
     color: ${palette.gray[5]};

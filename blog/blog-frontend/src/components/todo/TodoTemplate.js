@@ -7,7 +7,7 @@ const TodoTemplateWrap = styled.div`
   top: 0;
   bottom: 0;
   right: 0;
-  background: #e8f9ff;
+  background: #f4fdff;
   display: flex;
   flex-direction: column;
   justify-content: center;
